@@ -47,8 +47,8 @@
             this.btnSpeichern = new System.Windows.Forms.Button();
             this.cbNeu = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbListe = new System.Windows.Forms.RadioButton();
             this.rbDatenbank = new System.Windows.Forms.RadioButton();
+            this.rbListe = new System.Windows.Forms.RadioButton();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -81,9 +81,9 @@
             this.columnHeader5});
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(401, 89);
+            this.listView1.Location = new System.Drawing.Point(401, 63);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(511, 333);
+            this.listView1.Size = new System.Drawing.Size(511, 359);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -111,6 +111,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Plum;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(48, 89);
             this.label1.Name = "label1";
@@ -121,6 +122,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Plum;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(48, 136);
             this.label2.Name = "label2";
@@ -131,6 +133,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Plum;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(48, 183);
             this.label3.Name = "label3";
@@ -141,6 +144,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Plum;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(48, 230);
             this.label4.Name = "label4";
@@ -151,6 +155,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Plum;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(62, 284);
             this.label5.Name = "label5";
@@ -160,6 +165,7 @@
             // 
             // txtKennzeichen
             // 
+            this.txtKennzeichen.BackColor = System.Drawing.Color.Plum;
             this.txtKennzeichen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKennzeichen.Location = new System.Drawing.Point(163, 89);
             this.txtKennzeichen.Name = "txtKennzeichen";
@@ -168,6 +174,7 @@
             // 
             // txtMarke
             // 
+            this.txtMarke.BackColor = System.Drawing.Color.Plum;
             this.txtMarke.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMarke.Location = new System.Drawing.Point(163, 133);
             this.txtMarke.Name = "txtMarke";
@@ -176,6 +183,7 @@
             // 
             // txtType
             // 
+            this.txtType.BackColor = System.Drawing.Color.Plum;
             this.txtType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtType.Location = new System.Drawing.Point(163, 176);
             this.txtType.Name = "txtType";
@@ -184,6 +192,7 @@
             // 
             // txtFarbe
             // 
+            this.txtFarbe.BackColor = System.Drawing.Color.Plum;
             this.txtFarbe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFarbe.Location = new System.Drawing.Point(163, 227);
             this.txtFarbe.Name = "txtFarbe";
@@ -192,6 +201,7 @@
             // 
             // txtPS
             // 
+            this.txtPS.BackColor = System.Drawing.Color.Plum;
             this.txtPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPS.Location = new System.Drawing.Point(163, 277);
             this.txtPS.Name = "txtPS";
@@ -200,27 +210,30 @@
             // 
             // btnSpeichern
             // 
+            this.btnSpeichern.BackColor = System.Drawing.Color.PeachPuff;
             this.btnSpeichern.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSpeichern.Location = new System.Drawing.Point(245, 462);
             this.btnSpeichern.Name = "btnSpeichern";
             this.btnSpeichern.Size = new System.Drawing.Size(116, 52);
             this.btnSpeichern.TabIndex = 11;
             this.btnSpeichern.Text = "Speichern";
-            this.btnSpeichern.UseVisualStyleBackColor = true;
+            this.btnSpeichern.UseVisualStyleBackColor = false;
             // 
             // cbNeu
             // 
             this.cbNeu.AutoSize = true;
+            this.cbNeu.BackColor = System.Drawing.Color.PeachPuff;
             this.cbNeu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNeu.Location = new System.Drawing.Point(58, 482);
             this.cbNeu.Name = "cbNeu";
             this.cbNeu.Size = new System.Drawing.Size(61, 24);
             this.cbNeu.TabIndex = 12;
             this.cbNeu.Text = "Neu";
-            this.cbNeu.UseVisualStyleBackColor = true;
+            this.cbNeu.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightPink;
             this.groupBox1.Controls.Add(this.rbDatenbank);
             this.groupBox1.Controls.Add(this.rbListe);
             this.groupBox1.Location = new System.Drawing.Point(52, 331);
@@ -228,18 +241,6 @@
             this.groupBox1.Size = new System.Drawing.Size(308, 118);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
-            // 
-            // rbListe
-            // 
-            this.rbListe.AutoSize = true;
-            this.rbListe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbListe.Location = new System.Drawing.Point(38, 25);
-            this.rbListe.Name = "rbListe";
-            this.rbListe.Size = new System.Drawing.Size(155, 24);
-            this.rbListe.TabIndex = 0;
-            this.rbListe.TabStop = true;
-            this.rbListe.Text = "Liste/XML Autos";
-            this.rbListe.UseVisualStyleBackColor = true;
             // 
             // rbDatenbank
             // 
@@ -253,6 +254,18 @@
             this.rbDatenbank.Text = "Datenbank Autos";
             this.rbDatenbank.UseVisualStyleBackColor = true;
             // 
+            // rbListe
+            // 
+            this.rbListe.AutoSize = true;
+            this.rbListe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbListe.Location = new System.Drawing.Point(38, 25);
+            this.rbListe.Name = "rbListe";
+            this.rbListe.Size = new System.Drawing.Size(155, 24);
+            this.rbListe.TabIndex = 0;
+            this.rbListe.TabStop = true;
+            this.rbListe.Text = "Liste/XML Autos";
+            this.rbListe.UseVisualStyleBackColor = true;
+            // 
             // listView2
             // 
             this.listView2.BackColor = System.Drawing.Color.DarkSalmon;
@@ -264,9 +277,9 @@
             this.columnHeader10});
             this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(1005, 89);
+            this.listView2.Location = new System.Drawing.Point(1005, 63);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(511, 333);
+            this.listView2.Size = new System.Drawing.Size(511, 359);
             this.listView2.TabIndex = 14;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -345,6 +358,7 @@
             this.btnLv2ItemClear.TabIndex = 22;
             this.btnLv2ItemClear.Text = "LvItem Clear";
             this.btnLv2ItemClear.UseVisualStyleBackColor = false;
+            this.btnLv2ItemClear.Click += new System.EventHandler(this.btnLv2ItemClear_Click);
             // 
             // btnLv2Clear
             // 
@@ -356,6 +370,7 @@
             this.btnLv2Clear.TabIndex = 21;
             this.btnLv2Clear.Text = "LV Clear";
             this.btnLv2Clear.UseVisualStyleBackColor = false;
+            this.btnLv2Clear.Click += new System.EventHandler(this.btnLv2Clear_Click);
             // 
             // btnDBSpeichern
             // 
@@ -367,6 +382,7 @@
             this.btnDBSpeichern.TabIndex = 20;
             this.btnDBSpeichern.Text = "In Datenbank speichern";
             this.btnDBSpeichern.UseVisualStyleBackColor = false;
+            this.btnDBSpeichern.Click += new System.EventHandler(this.btnDBSpeichern_Click);
             // 
             // btnDBLesen
             // 
@@ -378,6 +394,7 @@
             this.btnDBLesen.TabIndex = 19;
             this.btnDBLesen.Text = "Aus Datenbank Lesen";
             this.btnDBLesen.UseVisualStyleBackColor = false;
+            this.btnDBLesen.Click += new System.EventHandler(this.btnDBLesen_Click);
             // 
             // btnEinsRechts
             // 
