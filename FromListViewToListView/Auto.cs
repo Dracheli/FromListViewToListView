@@ -42,8 +42,8 @@ namespace FromListViewToListView
 
         public String Type
         {
-            get { return Type; }
-            set { Type = value; }
+            get { return type; }
+            set { type = value; }
         }
 
         public String Farbe

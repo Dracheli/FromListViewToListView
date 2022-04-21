@@ -87,6 +87,7 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
             // 
             // columnHeader1
             // 
@@ -218,11 +219,14 @@
             this.btnSpeichern.TabIndex = 11;
             this.btnSpeichern.Text = "Speichern";
             this.btnSpeichern.UseVisualStyleBackColor = false;
+            this.btnSpeichern.Click += new System.EventHandler(this.btnSpeichern_Click);
             // 
             // cbNeu
             // 
             this.cbNeu.AutoSize = true;
             this.cbNeu.BackColor = System.Drawing.Color.PeachPuff;
+            this.cbNeu.Checked = true;
+            this.cbNeu.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbNeu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNeu.Location = new System.Drawing.Point(58, 482);
             this.cbNeu.Name = "cbNeu";
@@ -245,6 +249,7 @@
             // rbDatenbank
             // 
             this.rbDatenbank.AutoSize = true;
+            this.rbDatenbank.Checked = true;
             this.rbDatenbank.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbDatenbank.Location = new System.Drawing.Point(38, 65);
             this.rbDatenbank.Name = "rbDatenbank";
@@ -262,7 +267,6 @@
             this.rbListe.Name = "rbListe";
             this.rbListe.Size = new System.Drawing.Size(155, 24);
             this.rbListe.TabIndex = 0;
-            this.rbListe.TabStop = true;
             this.rbListe.Text = "Liste/XML Autos";
             this.rbListe.UseVisualStyleBackColor = true;
             // 
@@ -283,6 +287,7 @@
             this.listView2.TabIndex = 14;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
+            this.listView2.DoubleClick += new System.EventHandler(this.listView2_DoubleClick);
             // 
             // columnHeader6
             // 
@@ -314,6 +319,7 @@
             this.btnListeLesen.TabIndex = 15;
             this.btnListeLesen.Text = "Aus Liste/XML Lesen";
             this.btnListeLesen.UseVisualStyleBackColor = false;
+            this.btnListeLesen.Click += new System.EventHandler(this.btnListeLesen_Click);
             // 
             // btnListeSpeichern
             // 
@@ -325,6 +331,7 @@
             this.btnListeSpeichern.TabIndex = 16;
             this.btnListeSpeichern.Text = "In Liste/XML speichern";
             this.btnListeSpeichern.UseVisualStyleBackColor = false;
+            this.btnListeSpeichern.Click += new System.EventHandler(this.btnListeSpeichern_Click);
             // 
             // btnLv1Clear
             // 
@@ -336,6 +343,7 @@
             this.btnLv1Clear.TabIndex = 17;
             this.btnLv1Clear.Text = "LV Clear";
             this.btnLv1Clear.UseVisualStyleBackColor = false;
+            this.btnLv1Clear.Click += new System.EventHandler(this.btnLv1Clear_Click);
             // 
             // btnLv1ItemClear
             // 
@@ -347,6 +355,7 @@
             this.btnLv1ItemClear.TabIndex = 18;
             this.btnLv1ItemClear.Text = "LvItem Clear";
             this.btnLv1ItemClear.UseVisualStyleBackColor = false;
+            this.btnLv1ItemClear.Click += new System.EventHandler(this.btnLv1ItemClear_Click);
             // 
             // btnLv2ItemClear
             // 
@@ -406,6 +415,7 @@
             this.btnEinsRechts.TabIndex = 23;
             this.btnEinsRechts.Text = ">";
             this.btnEinsRechts.UseVisualStyleBackColor = false;
+            this.btnEinsRechts.Click += new System.EventHandler(this.btnEinsRechts_Click);
             // 
             // btnEinsLinks
             // 
@@ -417,6 +427,7 @@
             this.btnEinsLinks.TabIndex = 24;
             this.btnEinsLinks.Text = "<";
             this.btnEinsLinks.UseVisualStyleBackColor = false;
+            this.btnEinsLinks.Click += new System.EventHandler(this.btnEinsLinks_Click);
             // 
             // btnAlleRechts
             // 
@@ -428,6 +439,7 @@
             this.btnAlleRechts.TabIndex = 25;
             this.btnAlleRechts.Text = ">>";
             this.btnAlleRechts.UseVisualStyleBackColor = false;
+            this.btnAlleRechts.Click += new System.EventHandler(this.btnAlleRechts_Click);
             // 
             // btnAlleLinks
             // 
@@ -439,6 +451,7 @@
             this.btnAlleLinks.TabIndex = 26;
             this.btnAlleLinks.Text = "<<";
             this.btnAlleLinks.UseVisualStyleBackColor = false;
+            this.btnAlleLinks.Click += new System.EventHandler(this.btnAlleLinks_Click);
             // 
             // Form1
             // 
