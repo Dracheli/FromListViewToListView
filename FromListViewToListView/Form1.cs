@@ -75,7 +75,21 @@ namespace FromListViewToListView
 
         private void btnDBSpeichern_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < listView2.Items.Count; i++)
+            {
+                lvItem = listView2.Items[i];
+                string kennz = lvItem.SubItems[0].Text; //item hernehmen, zerlegen und dann sql befehl
+                string marke = lvItem.SubItems[1].Text;
+                string type = lvItem.SubItems[2].Text;
+                string farbe = lvItem.SubItems[3].Text;
+                int ps = Convert.ToInt32(lvItem.SubItems[4].Text);
 
+                sql = "INSERT INTO Auto (Kennzeichen, Marke, Type, Farbe, PS) " +
+                    " values ('"+kennz+"', '"+marke+"', '"+type+"', '"+farbe+"', "+ps+");";
+                db.ausfuehren(sql);
+            }
+
+            MessageBox.Show("Speichern erfolgreich!");
         }
     }
 }
