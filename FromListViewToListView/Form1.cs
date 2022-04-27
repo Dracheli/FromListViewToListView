@@ -90,6 +90,34 @@ namespace FromListViewToListView
                 listView1.Items.Add(lvItem);     // lvItem wird bei lv2 hinzugefügt
             }
         }
+
+        private void autosSerialisieren()
+        {
+            //autos.Clear();
+            for (int i = 0; i < listView1.Items.Count; i++)
+            {
+                Auto a = new Auto();
+                lvItem = listView1.Items[i];
+                a.Kennzeichen = lvItem.SubItems[0].Text;
+                a.Marke = lvItem.SubItems[1].Text;
+                a.Type = lvItem.SubItems[2].Text;
+                a.Farbe = lvItem.SubItems[3].Text;
+                a.PS = Convert.ToInt32(lvItem.SubItems[4].Text);
+                autos.Add(a);
+            }
+
+            try
+            {
+                FileStream fs = new FileStream(Application.StartupPath + "\\autos.xml", FileMode.Create, FileAccess.Write, FileShare.None);
+                serializer.Serialize(fs, autos);
+                fs.Close();
+                MessageBox.Show("Speichern erfolgreich!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         #endregion
 
         private void btnDBLesen_Click(object sender, EventArgs e)
@@ -151,7 +179,7 @@ namespace FromListViewToListView
             }
 
             MessageBox.Show("Speichern erfolgreich!");
-            listView2.Items.Clear();
+            //listView2.Items.Clear();
             //oder alternativ neu einlesen
         }
 
@@ -221,30 +249,7 @@ namespace FromListViewToListView
 
         private void btnListeSpeichern_Click(object sender, EventArgs e)
         {
-            autos.Clear();
-            Auto a = new Auto();
-            for(int i = 0; i<listView1.Items.Count; i++)
-            {
-                lvItem = listView1.Items[i];
-                a.Kennzeichen = lvItem.SubItems[0].Text;
-                a.Marke = lvItem.SubItems[1].Text;
-                a.Type = lvItem.SubItems[2].Text;
-                a.Farbe = lvItem.SubItems[3].Text;
-                a.PS = Convert.ToInt32(lvItem.SubItems[4].Text);
-                autos.Add(a);
-            }
-
-            try
-            {
-                FileStream fs = new FileStream(Application.StartupPath + "\\autos.xml", FileMode.Create, FileAccess.Write, FileShare.None);
-                serializer.Serialize(fs, autos);
-                fs.Close();
-                MessageBox.Show("Speichern erfolgreich!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            autosSerialisieren();
         }
 
         private void btnListeLesen_Click(object sender, EventArgs e)
@@ -308,7 +313,20 @@ namespace FromListViewToListView
             }
             if(rbListe.Checked)
             {
-
+                Auto a = new Auto();
+                a.Kennzeichen = txtKennzeichen.Text;
+                a.Marke = txtMarke.Text;
+                a.Type = txtType.Text;
+                a.Farbe = txtFarbe.Text;
+                a.PS = ps;
+                //autos.Add(a);
+                lvItem = new ListViewItem(a.Kennzeichen);
+                lvItem.SubItems.Add(a.Marke);
+                lvItem.SubItems.Add(a.Type);
+                lvItem.SubItems.Add(a.Farbe);
+                lvItem.SubItems.Add(a.PS.ToString());
+                listView1.Items.Add(lvItem);
+                autosSerialisieren();
             }
         }
     }
